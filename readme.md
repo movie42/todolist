@@ -6,9 +6,8 @@
 ### TODo-LIST
 >ver : 1.0.0, update:2020.08.17
 
+This project vanilla JS which Nomad Corder 2 Weeks challange course.
 
-This project vanilla JS. 
-
-If you wanna comment, please if you want! 
+If you want, please give me more comments.
 
 Thank you!
