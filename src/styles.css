@@ -1,0 +1,102 @@
+body {
+  font-family: sans-serif;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0 0 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+form,
+input,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 0, 0);
+}
+
+h1,
+h2,
+h3,
+h4,
+ul {
+  color: #fff;
+  line-height: 50px;
+}
+
+form {
+  display: none;
+  margin-top: 10px;
+  width: 320px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 320px;
+  border: 0;
+  font-size: 20px;
+  padding: 10px 5px;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.rewrite_btn {
+  margin: 10px;
+  color: rgb(43, 255, 0);
+  text-decoration: underline;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  cursor: pointer;
+}
+
+.todoList {
+  padding: 100px;
+  margin: 20px auto 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.todoList > li {
+  display: flex;
+  margin-top: 10px;
+  margin-right: 10px;
+  justify-content: space-between;
+  align-content: center;
+  width: 300px;
+  color: #000;
+  background-color: rgb(115, 255, 0);
+  line-height: 50px;
+}
+.todoList > li > button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+}
+
+.showing {
+  display: block;
+}
