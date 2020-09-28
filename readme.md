@@ -1,7 +1,8 @@
 ## Vanilla Javascript Project
 
+> [View ToDoList Page](https://movie42.github.io/todolist/)
 > lecture : Nomad Corder Vanilla JS Challenges Last Exam
-> [https://nomadcoders.co/javascript-for-beginners/lobby]
+> [Nomad Coder Vanilla JS Course](https://nomadcoders.co/javascript-for-beginners/lobby)
 
 ### TODo-LIST
 
