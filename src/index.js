@@ -13,6 +13,7 @@ const todoKey = "TODO_LIST";
 const USER_NAME = "users";
 const COORDS = "coords";
 const API_KEY = "d0b507ffc26b0ba87bc5af7c9d1fb0e5";
+
 let todoSaveList = [];
 
 const imgObj = {
@@ -25,7 +26,7 @@ const imgObj = {
   img4:
     "https://images.unsplash.com/photo-1588618670195-620f6dde8368?ixlib=rb-1.2.1&auto=format&fit=crop&w=2090&q=80",
   img5:
-    "https://images.unsplash.com/photo-1526035266069-fc237c5baddd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80"
+    "https://images.unsplash.com/photo-1526035266069-fc237c5baddd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2167&q=80",
 };
 
 function randomBackGround(value) {
@@ -49,10 +50,11 @@ function getDate() {
   const minutes = today.getMinutes();
   const seconds = today.getSeconds();
   const untilHour = 24 - hour;
+  console.log(untilHour);
   const untilMinutes = 60 - minutes;
   const untilSeconds = 60 - seconds;
-  date.innerText = `${untilHour > 10 ? untilHour : `0${untilMinutes}`}시간 ${
-    untilMinutes > 10 ? untilMinutes : `0${untilHour}`
+  date.innerText = `${untilHour > 10 ? untilHour : `0${untilHour}`}시간 ${
+    untilMinutes > 10 ? untilMinutes : `0${untilMinutes}`
   }분 ${untilSeconds > 10 ? untilSeconds : `0${untilSeconds}`}초`;
 }
 
@@ -83,7 +85,7 @@ function writeToDoList(value) {
   todoList.appendChild(li);
   const todoObj = {
     text: value,
-    id
+    id,
   };
   todoSaveList.push(todoObj);
   saveToDoList();
@@ -159,7 +161,7 @@ function handleGeoSucces(position) {
   console.log(latitude);
   const coordsObj = {
     latitude,
-    longitude
+    longitude,
   };
   saveCoords(coordsObj);
   getWeather(latitude, longitude);
