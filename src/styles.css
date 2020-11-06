@@ -6,9 +6,6 @@ body {
 }
 
 #app {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 40px 0 0 0;
   margin: 0;
   width: 100%;
@@ -29,8 +26,6 @@ div {
 }
 
 .date {
-  display: flex;
-  justify-content: center;
   background-color: rgb(255, 0, 0);
 }
 
@@ -72,9 +67,17 @@ input {
   cursor: pointer;
 }
 
+.list_container {
+  display: flex;
+}
+.list_item {
+  flex: 1;
+  background-color: #000;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
 .todoList {
-  padding: 100px;
-  margin: 20px auto 0;
   list-style: none;
   display: flex;
   justify-content: flex-start;
@@ -82,11 +85,8 @@ input {
 }
 
 .todoList > li {
-  display: flex;
   margin-top: 10px;
   margin-right: 10px;
-  justify-content: space-between;
-  align-content: center;
   width: 300px;
   color: #000;
   background-color: rgb(115, 255, 0);
