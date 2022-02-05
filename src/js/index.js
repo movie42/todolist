@@ -1,4 +1,6 @@
-import "./styles.css";
+import "../css/styles.scss";
+
+import { randomNumber } from "./util/util.js";
 
 const userForm = document.querySelector(".userForm");
 const userName = userForm.querySelector(".userName");
@@ -11,11 +13,6 @@ const todoKey = "TODO_LIST";
 const USER_NAME = "users";
 
 let todoSaveList = [];
-
-function randomNumber() {
-  const number = Math.floor(Math.random() * 10000000000);
-  return number;
-}
 
 function saveToDoList() {
   localStorage.setItem(todoKey, JSON.stringify(todoSaveList));
